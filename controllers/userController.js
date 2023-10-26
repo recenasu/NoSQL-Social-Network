@@ -48,7 +48,7 @@ module.exports = {
                 { $set: req.body },
                 { runValidators: true, new: true }
             );
-            res.status(200).json(`${user._id} updated!`);
+            res.status(200).json(`User ${user._id} updated!`);
         } catch (err) {
             res.status(500).json(err);
         }
@@ -66,7 +66,7 @@ module.exports = {
             // BONUS: Remove a user's associated thoughts when deleted.
             await Thought.deleteMany({ _id: { $in: user.thoughts } })
 
-            res.status(200).json(`${user._id} deleted!`);
+            res.status(200).json(`User ${user._id} deleted!`);
         } catch (err) {
             res.status(500).json(err);
         }
