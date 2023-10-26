@@ -35,10 +35,18 @@ const thoughtSeed = [
     "Quick. Top ten travel destinations! Go!",
     "Please like and share.",
     "Is it normal for your dog to to this?",
-    "Don't go to the car wash on Southern",
-    "Selling a 2002 Ford F150. Great condition."
 ];
 
+const userFirst = {
+    username: "georgio",
+    email: "georgio@email.com",
+};
 
+const userSecond = {
+    username: "mikey",
+    email: "mikey@email.com",
+};
 
-module.exports = { userSeed, emailSeed, thoughtSeed };
+const userArray = [userFirst, userSecond];
+
+module.exports = { userSeed, emailSeed, thoughtSeed, userArray };
