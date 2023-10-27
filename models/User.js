@@ -1,6 +1,5 @@
 // Import objects from the mongoose package: 'Schema' for defining the structure and properties of MongoDB documents, and 'model' for creating mongoose models.
 const { Schema, model } = require('mongoose');
-const Thought = require('./Thought');
 
 // Schema to create the User model
 const userSchema = new Schema(

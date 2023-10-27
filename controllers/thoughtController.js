@@ -59,7 +59,7 @@ module.exports = {
                 return res.status(404).json({ message: 'No thought with that id' });
             }
 
-                res.status(200).json(`$Thought {thought._id} updated!`);
+                res.status(200).json(`Thought ${thought._id} updated!`);
             } catch (err) {
                 res.status(500).json(err);
             }
